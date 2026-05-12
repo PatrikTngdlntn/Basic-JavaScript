@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag&Drop</title>
+    <style>
+      body {
+        background: #000;
+        color: #fff;
+        font-family: "Arial", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .container {
+        display: flex;
+        gap: 50px;
+        padding: 20px;
+      }
+      .dropzone {
+        width: 200px;
+        min-height: 200px;
+        border: 2px dashed gray;
+        padding: 10px;
+      }
+      .pemain {
+        background: lightblue;
+        margin: 5px;
+        cursor: move;
+        padding: 5px;
+      }
+      .dropzone {
+        width: 200px;
+        min-height: 200px;
+        border: 2px solid green;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="gudang" class="dropzone">
+        <h3>Gudang Pemain</h3>
+        <div class="pemain" draggable="true" id="p1">Kylian Mbappe</div>
+        <div class="pemain" draggable="true" id="p2">erling Haland</div>
+      </div>
+      <div id="lapangan" class="dropzone">
+        <h3>Lapangan Utama</h3>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
